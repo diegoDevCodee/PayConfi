@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  background-color: #1c56a8;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.container .sub_container {
+  width: 600px;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 10px 20px;
+  /* box-sizing: border-box; */
+  box-shadow: 0px 5px 10px rgba(120, 283, 247, 0.2);
+}
+
+.container .sub_container .content {
+
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+  flex: auto;
+}
+
+.container .sub_container .content .icon {
+  margin-right: 10px;
+}
+.container .sub_container .content .message .title {
+
+  font-weight: bold;
+}
+
+.container .sub_container .actions {
+
+  padding: 10px 0;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+.container .sub_container .actions button {
+  border: none;
+  padding: 15px;
+  min-width: 120px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.container .sub_container .actions .btn-donwload {
+  background-color: #029be1;
+  color: #fff;
+}
+.container .sub_container .actions .btn-donwload:hover {
+  background-color: #0280de;
+}
+
+.container .sub_container .actions .btn-back {
+  background-color: #fff;
+  border: solid 1px #ccc;
+}
+
+.container .sub_container .actions .btn-back:hover {
+  background-color: #eee;
+}
+
+@media(max-width:600px) {
+  .container .sub_container {
+    width: 80%;
+    margin-bottom: 100px;
+  }
+  .container .sub_container .actions{
+    flex-direction: column;
+  }
+}
